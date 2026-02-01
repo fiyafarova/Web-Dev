@@ -1,0 +1,126 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: #f4f4f4;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #ffd966;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #3a54e7;
+}
+
+/* Header */
+#header {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+#header h1 {
+    font-size: 42px;
+}
+
+.tagline {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.nav-menu {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-menu li {
+    display: inline-block;
+    margin: 0 12px;
+}
+
+/* Content Sections */
+.content-section {
+    background-color: #fff;
+    padding: 30px;
+    margin: 30px auto;
+    width: 85%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Welcome Section */
+#welcome img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Menu Section */
+.menu-item {
+    border: 1px solid #ddd;
+    background-color: #fafafa;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.menu-item:hover {
+    background-color: #f0f0f0;
+}
+
+.price {
+    font-weight: bold;
+    color: #c89b3c;
+}
+
+/* Info Section */
+.hours,
+.location {
+    display: inline-block;
+    width: 45%;
+    vertical-align: top;
+    margin-right: 4%;
+}
+
+.location {
+    margin-right: 0;
+}
+
+.hours h3 {
+    color: #444;
+}
+
+.location h3 {
+    color: #666;
+}
+
+/* Footer */
+#footer {
+    background-color: #222;
+    color: #ddd;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+.social-links a {
+    margin: 0 10px;
+}
+
+.back-to-top {
+    display: inline-block;
+    margin-top: 10px;
+}
