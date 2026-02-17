@@ -1,0 +1,28 @@
+<div class="card">
+  <div class="image-box">
+    <img [src]="product.images[currentImageIndex]" class="main-img" [alt]="product.name">
+  </div>
+
+  <div class="thumbnails">
+    <img *ngFor="let img of product.images; let i = index"
+         [src]="img"
+         (click)="changeImage(i)"
+         [class.active]="i === currentImageIndex">
+  </div>
+
+  <div class="info">
+    <h3 class="title">{{ product.name }}</h3>
+    <div class="meta">
+      <span class="rating">⭐ {{ product.rating }}</span>
+      <span class="price">{{ product.price | number }} ₸</span>
+    </div>
+    <p class="description">{{ product.description }}</p>
+  </div>
+
+  <div class="actions">
+    <a [href]="product.link" target="_blank" class="btn btn-kaspi">Купить на Kaspi</a>
+    <div class="share-group">
+      <button (click)="shareToWhatsApp()" class="btn btn-wa">Share</button>
+    </div>
+  </div>
+</div>
