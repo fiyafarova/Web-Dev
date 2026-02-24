@@ -1,0 +1,11 @@
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+.category-nav { display: flex; gap: 10px; justify-content: center; padding: 20px; }
+.active { background: #f14635; color: white; border-radius: 5px; }
+.card { border: 1px solid #ddd; padding: 15px; border-radius: 10px; display: flex; flex-direction: column; }
+.main-img { width: 100%; height: 200px; object-fit: contain; }
+.like-btn { cursor: pointer; color: red; font-weight: bold; }

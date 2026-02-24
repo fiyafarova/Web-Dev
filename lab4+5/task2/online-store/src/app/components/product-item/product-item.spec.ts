@@ -3,11 +3,11 @@ import { CommonModule } from '@angular/common';
 import { Product } from '../../models/product.model';
 
 @Component({
-  selector: 'app-product-card',
+  selector: 'app-product-item',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './product-card.component.html',
-  styleUrls: ['./product-card.component.css']
+  templateUrl: './product-item.component.html',
+  styleUrls: ['./product-item.component.css']
 })
 export class ProductCardComponent implements OnInit {
 

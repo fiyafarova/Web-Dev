@@ -1,0 +1,68 @@
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-family: "Apple Braille", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+    justify-items: center;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.search-input {
+    width: 100%;
+    max-width: 400px;
+    padding: 15px 20px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    outline: none;
+}
+
+.search-input:focus {
+    border: 1px solid blue;
+}
+.category-nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  background: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button.active {
+  background: #f14635; /* Цвет Kaspi */
+  color: white;
+  border-color: #f14635;
+}
+
+.search-input {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px;
+  margin: 0 auto 30px;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
