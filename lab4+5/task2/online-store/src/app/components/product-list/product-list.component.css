@@ -36,33 +36,33 @@
     border: 1px solid blue;
 }
 .category-nav {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
 button {
-  padding: 8px 16px;
-  border-radius: 20px;
-  border: 1px solid #ddd;
-  background: white;
-  cursor: pointer;
-  transition: 0.3s;
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    background: white;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
 button.active {
-  background: #f14635; /* Цвет Kaspi */
-  color: white;
-  border-color: #f14635;
+    background: #f14635; /* Цвет Kaspi */
+    color: white;
+    border-color: #f14635;
 }
 
 .search-input {
-  width: 100%;
-  max-width: 400px;
-  padding: 12px;
-  margin: 0 auto 30px;
-  display: block;
-  border: 1px solid #ccc;
-  border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+    padding: 12px;
+    margin: 0 auto 30px;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 8px;
 }

@@ -1,24 +1,27 @@
 <div class="container">
-  <nav class="category-nav">
-    <button *ngFor="let cat of categories"
-            (click)="selectCategory(cat.id)"
-            [class.active]="selectedCategoryId === cat.id">
-      {{ cat.name }}
-    </button>
-  </nav>
+    <nav class="category-nav">
+        @for (cat of categories; track cat.id) {
+            <button
+                (click)="selectCategory(cat.id)"
+                [class.active]="selectedCategoryId === cat.id">
+                {{ cat.name }}
+            </button>
+        }
+    </nav>
 
-  <div class="search-container">
-    <input type="text" [(ngModel)]="searchTerm" (ngModelChange)="applyFilters()"
-           placeholder="Поиск..." class="search-input">
-  </div>
+    <div class="search-container">
+        <input type="text" [(ngModel)]="searchTerm" (ngModelChange)="applyFilters()"
+             placeholder="Поиск..." class="search-input">
+    </div>
 
-  <div class="product-grid">
-    <app-product-item
-      *ngFor="let p of filteredProducts"
-      [product]="p"
-      (remove)="handleRemove($event)">
-    </app-product-item>
-  </div>
-
-  <p *ngIf="filteredProducts.length === 0" class="empty-msg">Товары не найдены.</p>
+    <div class="product-grid">
+        @for (p of filteredProducts; track p.id) {
+            <app-product-item
+              [product]="p"
+              (remove)="handleRemove($event)">
+            </app-product-item>
+        } @empty {
+            <p class="empty-msg">Товары не найдены.</p>
+        }
+      </div>
 </div>

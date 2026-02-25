@@ -1,14 +1,14 @@
 .card {
-  width: 100%;
-  width: 280px;
-  height: 570px;
-  background: white;
-  border: 1px solid #eee;
-  border-radius: 12px;
-  padding: 15px;
-  display: flex;
-  flex-direction: column;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    width: 100%;
+    width: 280px;
+    height: 570px;
+    background: white;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 .card:hover {
@@ -130,7 +130,6 @@
     padding: 10px;
     border-radius: 8px;
     border: none;
-    font-weight: bold;
     font-size: 13px;
     cursor: pointer;
     text-align: center;
@@ -170,23 +169,22 @@
 }
 
 .btn-kaspi {
-  padding: 10px;
-  border-radius: 8px;
-  border: none;
-  font-weight: bold;
-  font-size: 13px;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  transition: opacity 0.2s;
-  background: #0089d0;
-  color: white;
-  font-size: 14px;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: opacity 0.2s;
+    background: #0089d0;
+    color: white;
+    font-size: 14px;
 }
 
 .description {
-  display: flex;
-  flex-direction: column;
-  font-size: small;
-  color: #777;
+    display: flex;
+    flex-direction: column;
+    font-size: small;
+    color: #777;
 }

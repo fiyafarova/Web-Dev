@@ -3,33 +3,33 @@ import { CommonModule } from '@angular/common';
 import { Product } from '../../models/product.model';
 
 @Component({
-  selector: 'app-product-item',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './product-item.component.html',
-  styleUrls: ['./product-item.component.css']
+    selector: 'app-product-item',
+    standalone: true,
+    imports: [CommonModule],
+    templateUrl: './product-item.component.html',
+    styleUrls: ['./product-item.component.css']
 })
-export class ProductCardComponent implements OnInit {
+    export class ProductCardComponent implements OnInit {
 
-  @Input() product!: Product;
-  selectedImage!: string;
+    @Input() product!: Product;
+    selectedImage!: string;
 
-  ngOnInit() {
-    this.selectedImage = this.product.image;
-  }
+    ngOnInit() {
+        this.selectedImage = this.product.image;
+    }
 
-  setImage(img: string) {
-    this.selectedImage = img;
-  }
+    setImage(img: string) {
+        this.selectedImage = img;
+    }
 
-  shareWhatsApp() {
-    const url = encodeURIComponent(this.product.link);
-    window.open(`https://wa.me/?text=Check out this product: ${url}`, '_blank');
-  }
+    shareWhatsApp() {
+        const url = encodeURIComponent(this.product.link);
+        window.open(`https://wa.me/?text=Check out this product: ${url}`, '_blank');
+    }
 
-  shareTelegram() {
-    const url = encodeURIComponent(this.product.link);
-    const text = encodeURIComponent(this.product.name);
-    window.open(`https://t.me/share/url?url=${url}&text=${text}`, '_blank');
-  }
+    shareTelegram() {
+        const url = encodeURIComponent(this.product.link);
+        const text = encodeURIComponent(this.product.name);
+        window.open(`https://t.me/share/url?url=${url}&text=${text}`, '_blank');
+    }
 }
